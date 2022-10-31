@@ -1,6 +1,6 @@
 {
   "homepage": "http://dberkovski.github.io/my_portfolio",
-  "name": "one-portfolio",
+  "name": "my_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
