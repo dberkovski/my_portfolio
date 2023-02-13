@@ -1,37 +1,30 @@
 import React from "react";
-import arrayDestruct from '../assets/portfolio/arrayDestruct.jpg'
-import installNode from '../assets/portfolio/installNode.jpg'
-import navbar from '../assets/portfolio/navbar.jpg'
-import reactParallax from '../assets/portfolio/reactParallax.jpg'
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg'
-import reactWeather from '../assets/portfolio/reactWeather.jpg'
+
+import spotify from '../assets/portfolio/spotfy.jpg'
+import cvIcon from '../assets/portfolio/newcv.png'
+import serverImage from '../assets/portfolio/serverImage.png'
+
 
 
 const Portfolio = () => {
     const portfolios = [
         {
             id: 1,
-            src: arrayDestruct
+            src: cvIcon,
+            link:"https://github.com/dberkovski/my_portfolio",
+            text: "My Portfolio"
+
         },
         {
             id: 2,
-            src: reactParallax
-        },
-        {
+            src: spotify,
+            link:"https://github.com/dberkovski/spotify-clone",
+            text:"Spotify Clone"
+        },  {
             id: 3,
-            src: navbar
-        },
-        {
-            id: 4,
-            src: reactSmooth
-        },
-        {
-            id: 5,
-            src: reactWeather
-        },
-        {
-            id: 6,
-            src: installNode
+            src: serverImage,
+            link:"https://jsfiddle.net/dberkovski/wy8udv25/8/",
+            text:"Server Resource Monitoring Fiddle"
         },
     ]
     return (
@@ -43,12 +36,12 @@ const Portfolio = () => {
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
                     {
-                        portfolios.map(({id, src}) => (
+                        portfolios.map(({id, src, link,text}) => (
                                 <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                                     <img src={src} alt="" className="rounded-md duration-200 hover:scale-105"/>
                                     <div className="items-center flex justify-center ">
-                                        <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                                        <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                                        <a href={link} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 hover:border hover:border-indigo-800 hover:shadow-gray-600 hover:border-r-4">Code</a>
+                                        <div className="w1/2 px-6 py-3 m-4">{text}</div>
                                     </div>
                                 </div>
                             )
