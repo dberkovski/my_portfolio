@@ -25,8 +25,8 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div>
-                    <img src={berkovski} alt="my_picture" className="rounded-2xl mx-auto w-2/3 md:w-full hover:scale-105 p-6 shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)]"/>
+                <div className="rounded-l">
+                    <img src={berkovski} alt="my_picture" className="animate-bounce duration-700 rounded-2xl mx-auto w-2/3 md:w-full hover:scale-105 p-6 shadow-[0px_22px_70px_4px_rgba(0,0,0,0.56)]"/>
                 </div>
 
             </div>

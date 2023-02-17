@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+
 const About = () => {
     return (
         <div name="about" className="h-screen w-full bg-gradient-to-b from-cyan-900 via-skye to-black text-white">
@@ -9,7 +10,7 @@ const About = () => {
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
                 </div>
                 <br/>
-                <p className="text-xl mt-20">
+                <p id="about_div" className="text-xl mt-20 border-2 p-4 shadow-2xl rounded-2xl">
                     Extremely passionate and motivated software developer in
                     field. Analytical and detail oriented, creative and adaptive. Currently working on payment
                     system for new
@@ -21,6 +22,7 @@ const About = () => {
                     I am responsible for frontend developing at this project.
                 </p>
             </div>
+
 
         </div>
     )
